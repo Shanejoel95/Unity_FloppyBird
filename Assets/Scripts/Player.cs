@@ -39,6 +39,14 @@ public class Player : MonoBehaviour
         InvokeRepeating(nameof (SpriteAnimation),0.15f,0.15f);
     }
 
+    private void OnEnable()
+    {
+        Vector3 position = transform.position;
+        position.y = 0f;
+        transform.position = position;
+        direction = Vector3.zero;
+    }
+
     // Update is called once per frame
     private void Update()
     { 
@@ -77,5 +85,17 @@ public class Player : MonoBehaviour
         }
         //Updating the sprite index
         spriteRenderer.sprite=sprites[spriteIndex];
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle") 
+        {
+            FindObjectOfType<GameManager>().GameOver();
+        }
+        else if(other.gameObject.tag == "Score")
+        {
+            FindObjectOfType<GameManager>().IncreaseScore();
+        }
     }
 }
