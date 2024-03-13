@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         //Repeating the function to animate the flappy bird
-        InvokeRepeating(nameof (SpriteAnimation),0.15f,0.15f);
+        InvokeRepeating(nameof(SpriteAnimation),0.15f,0.15f);
     }
 
     private void OnEnable()
