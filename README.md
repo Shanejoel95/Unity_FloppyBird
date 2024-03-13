@@ -1,7 +1,8 @@
 **# Flappy-Inspired 2D Game**
 
-**Welcome to our Flappy Bird-inspired 2D game! Dive into the action, navigate through obstacles, and aim for the highest score. Enjoy intuitive controls, vibrant visuals, and the challenge of beating your own record. Download, install, and start playing today!
-**
+**Welcome to our Flappy Bird-inspired 2D game! Dive into the action, navigate through obstacles, and aim for the highest score. Enjoy intuitive controls, vibrant visuals, and the challenge of beating your own record. Download, install, and start playing today!**
+
+
 **## Features:**
 - Intuitive Controls
 - Dynamic Obstacle Navigation
